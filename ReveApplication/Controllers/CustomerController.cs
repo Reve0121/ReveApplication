@@ -1,7 +1,9 @@
-﻿using ReveEFAccess;
+﻿
+using ReveBusinessLogic;
 using ReveModels;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -11,15 +13,22 @@ using System.Web.Http;
 namespace ReveApplication.Controllers
 {
     [RoutePrefix("api/customer")]
-    public class CustomerController : ApiController
+    public class CustomerController : BaseController
     {
-        protected revedatabaseEntities db = new revedatabaseEntities();
-
+        private BLCustomer blCustomer = new BLCustomer();
+        
         [HttpGet]
         [Route("allCustomer")]
-        public async Task<RMCustomer> getAllCustomer()
+        public async Task<HttpResponseMessage> GetAllCustomer()
         {
-            return await db.Customers.ToListAsync();
+            return Return(await blCustomer.GetAllRMCustomer());
+        }
+
+        [HttpGet]
+        [Route("getCustomerById/{id}")]
+        public async Task<HttpResponseMessage> GetCustomerByIdAsync(int id)
+        {
+            return Return(await blCustomer.GetCustomerById(id));
         }
     }
 }

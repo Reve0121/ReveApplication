@@ -40,15 +40,15 @@ namespace ReveModels
         [JsonProperty("phone")]
         public string Phone { get; set; }
         
-        public string PasswordHash { get; set; }
+        //public string PasswordHash { get; set; }
         [JsonProperty("passwordSalt")]
         public string PasswordSalt { get; set; }
        
-        public System.Guid rowguid { get; set; }
+        //public System.Guid rowguid { get; set; }
        
-        public System.DateTime ModifiedDate
-        {
-            get; set;
-        }
+        //public System.DateTime ModifiedDate
+        //{
+        //    get; set;
+        //}
     }
 }

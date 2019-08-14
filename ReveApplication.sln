@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReveEFAccess", "ReveEFAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReveModels", "ReveModels\ReveModels.csproj", "{B5CBFA43-EA78-4487-AD52-04FD661E1181}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReveBusinessLogic", "ReveBusinessLogic\ReveBusinessLogic.csproj", "{46C1CC11-4D88-427A-B6E5-8B574F6B9950}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B5CBFA43-EA78-4487-AD52-04FD661E1181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5CBFA43-EA78-4487-AD52-04FD661E1181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5CBFA43-EA78-4487-AD52-04FD661E1181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C1CC11-4D88-427A-B6E5-8B574F6B9950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C1CC11-4D88-427A-B6E5-8B574F6B9950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C1CC11-4D88-427A-B6E5-8B574F6B9950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C1CC11-4D88-427A-B6E5-8B574F6B9950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

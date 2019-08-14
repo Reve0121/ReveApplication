@@ -13,10 +13,10 @@ namespace ReveEFAccess
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class revedatabaseEntities : DbContext
+    public partial class revedatabase : DbContext
     {
-        public revedatabaseEntities()
-            : base("name=revedatabaseEntities")
+        public revedatabase()
+            : base("name=revedatabase")
         {
         }
     
@@ -35,5 +35,8 @@ namespace ReveEFAccess
         public virtual DbSet<ProductModelProductDescription> ProductModelProductDescriptions { get; set; }
         public virtual DbSet<SalesOrderDetail> SalesOrderDetails { get; set; }
         public virtual DbSet<SalesOrderHeader> SalesOrderHeaders { get; set; }
+        public virtual DbSet<vGetAllCategory> vGetAllCategories { get; set; }
+        public virtual DbSet<vProductAndDescription> vProductAndDescriptions { get; set; }
+        public virtual DbSet<vProductModelCatalogDescription> vProductModelCatalogDescriptions { get; set; }
     }
 }

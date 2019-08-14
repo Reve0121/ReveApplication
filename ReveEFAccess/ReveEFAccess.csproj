@@ -96,20 +96,27 @@
     <Compile Include="SalesOrderHeader.cs">
       <DependentUpon>SalesLT.tt</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="SalesLT.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SalesLT.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <Compile Include="vGetAllCategory.cs">
+      <DependentUpon>SalesLT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vProductAndDescription.cs">
+      <DependentUpon>SalesLT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vProductModelCatalogDescription.cs">
+      <DependentUpon>SalesLT.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="SalesLT.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SalesLT.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="SalesLT.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SalesLT.Context.cs</LastGenOutput>
       <DependentUpon>SalesLT.edmx</DependentUpon>
+      <LastGenOutput>SalesLT.Context.cs</LastGenOutput>
     </None>
     <None Include="SalesLT.edmx.diagram">
       <DependentUpon>SalesLT.edmx</DependentUpon>
