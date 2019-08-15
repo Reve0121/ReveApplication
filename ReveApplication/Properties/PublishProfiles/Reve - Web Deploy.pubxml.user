@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApZegNvX5e06WcMfpv3GmPQAAAAACAAAAAAADZgAAwAAAABAAAAB2EXb/A9+/9bp//kcv4aw1AAAAAASAAACgAAAAEAAAAE7rQQsyi2hrd8jc2BCjFaCAAAAAoCc/IB/zcx1M7icVqGC6Sk8dN9fyQieT+cx8lxZUe/yNlLCrRHy0WVL1qO807DHNoFMhZT6aOdNZyBpiejecGU0C9gzRBXUwkIgZ8iPJVllh5ZlGv3ld4644yUXW1bhdQEfXTZB1y+x4xGUCJsuJaFZf+5Z5X7yxxRJfpl8weQcUAAAAkXYLQ+5UC3qKIbNS2DOehos0MBo=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:reveservers.database.windows.net,1433;Initial Catalog=ReveDB;User Id=reve0121@reveservers.database.windows.net;Password=qwe123098poi.." />
+    <AzureDBConnectionStrings Include="Data Source=tcp:revesqlserver.database.windows.net,1433;Initial Catalog=revedatabase;User Id=reve0121@revesqlserver@revesqlserver;Password=GAOWEI19951017gf.." />
+  </ItemGroup>
+</Project>

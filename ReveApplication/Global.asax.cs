@@ -1,3 +1,5 @@
+using AutoMapper;
+using ReveMDMap;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,11 @@ namespace ReveApplication
     {
         protected void Application_Start()
         {
+            Mapper.Reset();
+            Mapper.Initialize(cfg =>
+            {
+                cfg.AddProfile<CustomerMapProfile>();
+            });
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

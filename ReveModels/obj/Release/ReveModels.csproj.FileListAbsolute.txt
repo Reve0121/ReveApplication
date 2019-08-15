@@ -1,0 +1,9 @@
+E:\Pro0121\ReveApplication\ReveModels\bin\Release\ReveModels.dll
+E:\Pro0121\ReveApplication\ReveModels\bin\Release\ReveModels.pdb
+E:\Pro0121\ReveApplication\ReveModels\bin\Release\Newtonsoft.Json.dll
+E:\Pro0121\ReveApplication\ReveModels\bin\Release\Newtonsoft.Json.xml
+E:\Pro0121\ReveApplication\ReveModels\obj\Release\ReveModels.csprojAssemblyReference.cache
+E:\Pro0121\ReveApplication\ReveModels\obj\Release\ReveModels.csproj.CoreCompileInputs.cache
+E:\Pro0121\ReveApplication\ReveModels\obj\Release\ReveModels.csproj.CopyComplete
+E:\Pro0121\ReveApplication\ReveModels\obj\Release\ReveModels.dll
+E:\Pro0121\ReveApplication\ReveModels\obj\Release\ReveModels.pdb

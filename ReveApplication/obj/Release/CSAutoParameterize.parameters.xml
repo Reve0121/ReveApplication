@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="revedatabase-Web.config Connection String" description="revedatabase 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="metadata=res://*/SalesLT.csdl|res://*/SalesLT.ssdl|res://*/SalesLT.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=revesqlserver.database.windows.net;initial catalog=revedatabase;persist security info=True;user id=reve0121@revesqlserver;password=GAOWEI19951017gf..;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Pro0121\\ReveApplication\\ReveApplication\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='revedatabase']/@connectionString" />
+  </parameter>
+</parameters>

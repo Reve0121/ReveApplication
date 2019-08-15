@@ -19,7 +19,7 @@ namespace ReveModels
         [JsonProperty("title")]
         public string Title { get; set; }
 
-        [JsonProperty("FirstName")]
+        [JsonProperty("firstName")]
         [Required(ErrorMessage = "FirstName can't be null.")]
         public string FirstName { get; set; }
 
@@ -43,12 +43,12 @@ namespace ReveModels
         //public string PasswordHash { get; set; }
         [JsonProperty("passwordSalt")]
         public string PasswordSalt { get; set; }
-       
-        //public System.Guid rowguid { get; set; }
-       
-        //public System.DateTime ModifiedDate
-        //{
-        //    get; set;
-        //}
+        [JsonProperty("rowguid")]
+        public System.Guid rowguid { get; set; }
+        [JsonProperty("modifiedDate")]
+        public System.DateTime ModifiedDate
+        {
+            get; set;
+        }
     }
 }
