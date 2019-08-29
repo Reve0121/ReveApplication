@@ -38,5 +38,32 @@ namespace ReveBusinessLogic
             }
         }
 
+        public async Task<ResultModel<RMCustomer>> CreateCustomer(RMCustomer rmCustomer)
+        {
+            rmCustomer.ModifiedDate = DateTime.Now;
+            var entity = Mapper.Map<ReveEFAccess.Customer>(rmCustomer);
+            db.Customers.Add(entity);
+            await db.SaveChangesAsync();
+            rmCustomer.CustomerID = entity.CustomerID;
+
+            //CacheData.Cache_Stages = null;
+            return Success(rmCustomer);
+
+        }
+
+        public async Task<ResultModel<RMCustomer>> UpdateCustomer(int id)
+        {
+            var customer = await db.Customers.FirstOrDefaultAsync(r => r.CustomerID == id);
+            if (customer != null)
+            {
+                var result = Mapper.Map<RMCustomer>(customer);
+                return Success(result);
+            }
+            else
+            {
+                return Error<RMCustomer>("No Customer");
+            }
+        }
+
     }
 }
